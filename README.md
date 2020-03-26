@@ -9,4 +9,4 @@
 •	Nesne Yonelimli Programlama
 •	Fonksiyonel Programlama
 •	Moduller
-•	Hato Yonetimi
+•	Hata Yonetimi
