@@ -287,20 +287,80 @@ try:
 except TypeError:
     print("Sayi ve String problemi")
 
+#Sorular
+    
+A = ["ali","veli","isik"]
+B = [1,2,3]
+AB = [A,B]
 
 
+for i in AB:
+    if type(i[0]) == int:
+        print(list(map(lambda x: x-3, i)))    
+
+A = [[1,2],[3,4],[5,6]]
+list(map(lambda x: x[0]*3, A))
+
+def islem(x,y,z):
+    if y == 0:
+        print("hatali islem")
+    else:
+        return x/y*z
+
+islem()
+islem(1,0,2)
+
+list(map(lambda x: x*1, [2,7,4]))
+
+import numpy as np
+a = np.array([1,1,1])
+b = np.array([2])
+
+a+b
+
+list(filter(lambda x: len(x) > 8, ["pazartesi","sali","carsamba","persembe","cuma"]))
+
+list(map(lambda x: x.upper(), ["Ali","Veli","isik"]))
+
+from functools import reduce
+A = ["Veri","Bilimi","Okulu"]
+reduce(lambda a,b: a+b, list(map(lambda x: x[0], A)))
+
+list(map(lambda x: x.capitalize(), ["abc","bcd","cde"]))
+
+from functools import reduce
+reduce(lambda a,b: a+b, ["a","4","a"])
 
 
+A = [1,2,3,4,5]
 
+if type(A) == ():
+    print("islem gecersiz")
+else:
+    print(list(map(lambda x: x/1, A)))
 
+list(map(lambda x: x/10, filter(lambda x: x > 20, [10,20,30,40,50])))
 
+class BolumSorulari():
+    fonksiyonlar = []
+    OOP = []
 
+BolumSorulari.OOP
 
+liste = [1,2,3,4]
+A = []
 
+for i in liste:
+    A.append(i**2)
 
+print(A)
 
+list(map(lambda x: x**2, liste))
 
+liste = ["a",20,10,30,"b"]
+list(filter(lambda x: type(x) == int, liste))
 
-
+a = [1,2,3]
+list(map(lambda x: x*2, a))
 
 
